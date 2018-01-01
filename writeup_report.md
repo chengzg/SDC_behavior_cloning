@@ -84,6 +84,7 @@ I used the Nvidia model architecture which contains
    to Flatten the input
 
 * 3 full connected feature layers and 1 output layer
+
   |   layer name     |  input number  | output number |  dropout |
   | :--------------: | :------------: |:-------------:| :-------:|
   |   fc layer 1     | 2112           | 100           | 0.2      |
@@ -125,6 +126,7 @@ In order to gauge how well the model was working, I split my image and steering 
 
 The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track. 
 Firstly the sample data provided in the original data set is used, I found along the track, there are 3 failures points as shown below:
+
 ![alt text][image2]
 ![alt text][image3]
 ![alt text][image4]
