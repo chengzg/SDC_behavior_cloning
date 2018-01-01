@@ -102,11 +102,11 @@ The model includes RELU layers to introduce nonlinearity
 
 The model contains 2 dropout layers in order to reduce overfitting. 
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+The model was trained and validated on different data sets to ensure that the model was not overfitting. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 #### 3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 92)
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 88)
 
 #### 4. Appropriate training data
 
@@ -176,14 +176,15 @@ These images show what a recovery looks like starting from right side of the lan
 
 I tried to record the video on Track two but the road condition is more complex. In the end, i did not include data from track 2.
 
-To augment the data sat, I also flipped images and angles thinking that this would definitely since it is totally reasonal data for the model.
-For example, here is an image that has then been flipped:
+To augment the data sat, I also flipped images and angles thinking that this would definitely help since it is totally reasonal data for the model.
+For example, here below are two images that have then been flipped:
 
 ![alt text][image24]
 ![alt text][image25]
 
 ![alt text][image26]
 ![alt text][image27]
+
 Etc ....
 
 After the collection process, I had around 50,000 number of data points. 
